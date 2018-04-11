@@ -4,7 +4,7 @@ class WelcomeController < ApplicationController
     
   end
   
-  def trayectos
+  def about
     
   end
   

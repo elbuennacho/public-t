@@ -1,0 +1,16 @@
+<h1>Se muestran todas las paradas de esta ruta</h1>
+
+<table>
+  <tr>
+    <th>Número</th>
+    <th>Ubicación</th>
+  </tr>
+  
+  <% @centros.each do |centro| %>
+  <tr>
+    <td><%= centro.número %></td>
+    <td><%= centro.ubicación %></td>
+    <td><%= link_to 'Show', centro_path(centro) %></td>
+  </tr>
+  <% end %> 
+</table>

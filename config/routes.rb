@@ -6,9 +6,11 @@ Rails.application.routes.draw do
   # root 'welcome#index'
   
   root 'welcome#inicio'
-  get 'trayectos', to: 'welcome#trayectos'
+  get 'about', to: 'welcome#about'
   
   resources :trayectos
+  resources :paradas
+  resources :centros
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
