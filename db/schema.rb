@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180411190015) do
+ActiveRecord::Schema.define(version: 20180411222047) do
 
   create_table "centros", force: :cascade do |t|
     t.string   "número"
@@ -46,6 +46,7 @@ ActiveRecord::Schema.define(version: 20180411190015) do
     t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.text     "paradas"
   end
 
 end
