@@ -1,10 +1,10 @@
 class WelcomeController < ApplicationController
   
-  def home
+  def inicio
     
   end
   
-  def rutas
+  def trayectos
     
   end
   
