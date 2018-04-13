@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   root 'welcome#inicio'
   get 'about', to: 'welcome#about'
   
-  resources :trayectos
+  resources :trayectos 
   resources :paradas
   resources :centros
 

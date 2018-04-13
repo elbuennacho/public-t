@@ -2,3 +2,18 @@
 
 <p>Parada: <%= @parada.parada %></p>
 <p>Location: <%= @parada.location %></p>
+
+<table>
+  <tr>
+    <th>Parada</th>
+    <th>Location</th>
+  </tr>
+  
+  <% @paradas.each do |parada| %>
+  <tr>
+    <td><%= parada.parada %></td>
+    <td><%= parada.location %></td>
+    <td><%= link_to 'Show', parada_path(parada) %></td>
+  </tr>
+  <% end %> 
+</table>
