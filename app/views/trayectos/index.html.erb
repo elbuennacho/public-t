@@ -2,32 +2,19 @@
 
 <table>
   <tr>
-    <th>Title</th>
-    <th>Description</th>
+    <th>Zona</th>
+    <th>Ruta</th>
   </tr>
   
   <% @trayectos.each do |trayecto| %>
   <tr>
     <td><%= trayecto.title %></td>
     <td><%= trayecto.description %></td>
-    <td><%= trayecto.id %></td>
-    <td><%= trayecto.paradas %></td>
     <td><%= link_to 'Show', trayecto_path(trayecto) %></td>
-    <td><%= link_to "Mostrar otras paradas de esta ruta", paradas_path %></td>
   </tr>
   
   <% end %>
   
-  <% @paradas.each do |parada| %>
-  <tr>
-    <td><%= parada.parada %></td>
-    <td><%= parada.location %></td>
-    <td><%= parada.id %></td>
-    <td><%= link_to "Mostrar las paradas de esta ruta", centros_path %></td>
-  </tr>
-  
-  
-  <% end %> 
 </table>
 
 
